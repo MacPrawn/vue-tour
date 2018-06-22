@@ -22,7 +22,7 @@
       </div>
     </slot>
 
-    <div class="v-step__arrow" :class="{ 'v-step__arrow--dark': step.dark }"></div>
+    <div v-if="showArrow" class="v-step__arrow" :class="{ 'v-step__arrow--dark': !!step.dark }"></div>
   </div>
 </template>
 
@@ -64,6 +64,10 @@ export default {
         ...DEFAULT_STEP_OPTIONS,
         ...this.step.params
       }
+    },
+    showArrow () {
+      const params = this.params
+      return !params.modifiers || !params.modifiers.arrow || !params.modifiers.arrow.hasOwnProperty('enabled') || !!params.modifiers.arrow.enabled
     }
   },
   mounted () {
