@@ -12,7 +12,7 @@ export const DEFAULT_OPTIONS = {
 
 export const DEFAULT_STEP_OPTIONS = {
   placement: 'bottom',
-  cssClass: {},
+  cssClass: {}
 }
 
 export const KEYS = {
