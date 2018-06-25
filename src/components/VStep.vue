@@ -1,5 +1,6 @@
 <template>
   <div :class="step.params.cssClass||{}" class="v-step" :id="'v-step-' + hash" :ref="'v-step-' + hash">
+    {{step.params}}
     <slot name="header">
       <div v-if="step.header" class="v-step__header">
         <div v-if="step.header.title" v-html="step.header.title"></div>
