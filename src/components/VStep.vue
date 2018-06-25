@@ -1,6 +1,5 @@
 <template>
   <div :class="params.cssClass||{}" class="v-step" :id="'v-step-' + hash" :ref="'v-step-' + hash">
-    {{params}}
     <slot name="header">
       <div v-if="step.header" class="v-step__header">
         <div v-if="step.header.title" v-html="step.header.title"></div>
@@ -61,6 +60,12 @@ export default {
   },
   computed: {
     params () {
+console.log('DEFAULT_STEP_OPTIONS', DEFAULT_STEP_OPTIONS)
+console.log('this.step.params', this.step.params)
+console.log('params', {
+        ...DEFAULT_STEP_OPTIONS,
+        ...this.step.params
+      })
       return {
         ...DEFAULT_STEP_OPTIONS,
         ...this.step.params
