@@ -698,9 +698,6 @@ var hash_sum_default = /*#__PURE__*/__webpack_require__.n(hash_sum);
   },
   computed: {
     params: function params() {
-      console.log('DEFAULT_STEP_OPTIONS', DEFAULT_STEP_OPTIONS);
-      console.log('this.step.params', this.step.params);
-      console.log('params', Object.assign({}, DEFAULT_STEP_OPTIONS, this.step.params));
       return Object.assign({}, DEFAULT_STEP_OPTIONS, this.step.params);
     },
     showArrow: function showArrow() {
@@ -725,13 +722,13 @@ var hash_sum_default = /*#__PURE__*/__webpack_require__.n(hash_sum);
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-33cd3858","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/VStep.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-ee433616","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/VStep.vue
 var VStep_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:'v-step-' + _vm.hash,staticClass:"v-step",class:_vm.params.cssClass||{},attrs:{"id":'v-step-' + _vm.hash}},[_vm._t("header",[(_vm.step.header)?_c('div',{staticClass:"v-step__header"},[(_vm.step.header.title)?_c('div',{domProps:{"innerHTML":_vm._s(_vm.step.header.title)}}):_vm._e()]):_vm._e()]),_vm._v(" "),_vm._t("content",[_c('div',{staticClass:"v-step__content"},[(_vm.step.content)?_c('div',{domProps:{"innerHTML":_vm._s(_vm.step.content)}}):_c('div',[_vm._v("This is a demo step! The id of this step is "+_vm._s(_vm.hash)+" and it targets "+_vm._s(_vm.step.target)+".")])])]),_vm._v(" "),_vm._t("actions",[_c('div',{staticClass:"v-step__buttons"},[(!_vm.isLast)?_c('button',{staticClass:"v-step__button",on:{"click":_vm.stop}},[_vm._v("Skip tour")]):_vm._e(),_vm._v(" "),(!_vm.isFirst)?_c('button',{staticClass:"v-step__button",on:{"click":_vm.previousStep}},[_vm._v("Previous")]):_vm._e(),_vm._v(" "),(!_vm.isLast)?_c('button',{staticClass:"v-step__button",on:{"click":_vm.nextStep}},[_vm._v("Next")]):_vm._e(),_vm._v(" "),(_vm.isLast)?_c('button',{staticClass:"v-step__button",on:{"click":_vm.stop}},[_vm._v("Finish")]):_vm._e()])]),_vm._v(" "),(_vm.showArrow)?_c('div',{staticClass:"v-step__arrow",class:{ 'v-step__arrow--dark': !!_vm.step.dark }}):_vm._e()],2)}
 var VStep_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/VStep.vue
 function injectStyle (context) {
-  __webpack_require__("vR6U")
+  __webpack_require__("Rl4R")
 }
 /* script */
 
@@ -743,7 +740,7 @@ var VStep___vue_template_functional__ = false
 /* styles */
 var VStep___vue_styles__ = injectStyle
 /* scopeId */
-var VStep___vue_scopeId__ = "data-v-33cd3858"
+var VStep___vue_scopeId__ = "data-v-ee433616"
 /* moduleIdentifier (server only) */
 var VStep___vue_module_identifier__ = null
 
@@ -902,6 +899,13 @@ module.exports = function (object, names) {
   return result;
 };
 
+
+/***/ }),
+
+/***/ "Rl4R":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -3638,13 +3642,6 @@ module.exports = function (key) {
   return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
 };
 
-
-/***/ }),
-
-/***/ "vR6U":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 

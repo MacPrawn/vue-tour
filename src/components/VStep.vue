@@ -60,12 +60,6 @@ export default {
   },
   computed: {
     params () {
-console.log('DEFAULT_STEP_OPTIONS', DEFAULT_STEP_OPTIONS)
-console.log('this.step.params', this.step.params)
-console.log('params', {
-        ...DEFAULT_STEP_OPTIONS,
-        ...this.step.params
-      })
       return {
         ...DEFAULT_STEP_OPTIONS,
         ...this.step.params
